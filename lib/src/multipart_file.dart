@@ -4,7 +4,7 @@
 
 import 'dart:convert';
 
-import '../http_parser.dart';
+import 'http_parser.dart';
 
 import 'byte_stream.dart';
 import 'multipart_file_stub.dart' if (dart.library.io) 'multipart_file_io.dart';
