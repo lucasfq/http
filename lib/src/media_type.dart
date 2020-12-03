@@ -76,8 +76,8 @@ class MediaType {
       });
 
   MediaType(String type, String subtype, [Map<String, String>? parameters])
-      : type = type.toLowerCase(),
-        subtype = subtype.toLowerCase(),
+      : type = type,
+        subtype = subtype,
         parameters = UnmodifiableMapView(
             parameters == null ? {} : CaseInsensitiveMap.from(parameters));
 
