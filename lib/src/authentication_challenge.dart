@@ -111,7 +111,7 @@ class AuthenticationChallenge {
   /// due to invalid trailing whitespace.
   static String _scanScheme(StringScanner scanner, {String? whitespaceName}) {
     scanner.expect(token, name: 'a token');
-    final scheme = scanner.lastMatch![0]!.toLowerCase();
+    final scheme = scanner.lastMatch![0]!;
 
     scanner.scan(whitespace);
 
