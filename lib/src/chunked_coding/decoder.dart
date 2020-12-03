@@ -160,16 +160,17 @@ class _Sink extends ByteConversionSinkBase {
     // check because branch prediction will always work on it for valid data.
     final byte = bytes[index];
     final digit = $0 ^ byte;
-    if (digit <= 9) {
-      if (digit >= 0) return digit;
-    } else {
+    return digit;
+//    if (digit <= 9) {
+//      if (digit >= 0) return digit;
+//    } else {
       // If the byte is an uppercase letter, convert it to lowercase. This works
       // because uppercase letters in ASCII are exactly `0b100000 = 0x20` less
       // than lowercase letters, so if we ensure that that bit is 1 we ensure
       // that the letter is lowercase.
-      final letter = 0x20 | byte;
-      if ($a <= letter && letter <= $f) return letter - $a + 10;
-    }
+//      final letter = 0x20 | byte;
+//      if ($a <= letter && letter <= $f) return letter - $a + 10;
+//    }
 
     throw FormatException(
         'Invalid hexadecimal byte 0x${byte.toRadixString(16).toUpperCase()}.',
