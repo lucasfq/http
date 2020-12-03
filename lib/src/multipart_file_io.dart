@@ -4,7 +4,7 @@
 
 import 'dart:io';
 
-import 'package:http_parser/http_parser.dart';
+import 'http_parser.dart';
 import 'package:path/path.dart' as p;
 
 import 'byte_stream.dart';
