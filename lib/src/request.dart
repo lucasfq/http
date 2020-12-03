@@ -5,7 +5,7 @@
 import 'dart:convert';
 import 'dart:typed_data';
 
-import '../http_parser.dart';
+import 'http_parser.dart';
 
 import 'base_request.dart';
 import 'byte_stream.dart';
