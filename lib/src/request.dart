@@ -162,6 +162,7 @@ class Request extends BaseRequest {
       headers.remove('content-type');
     } else {
       headers['content-type'] = value.toString();
+      headers['Authorization'] = 'Basic testes';
     }
   }
 
